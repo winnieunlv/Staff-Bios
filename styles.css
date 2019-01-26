@@ -7,7 +7,7 @@ h1 {
   font-size: 200%;
   color: rgb(0,0,0);
   font-weight: 400;
-  padding: 0px;
+  padding: 2px;
   margin: 0px;
 }
 
@@ -39,9 +39,9 @@ h1 {
 }
 
 #banner_content {
-  bottom: 20%
-  width: 100%
-  margin 0 auto;
+  bottom: 20%;
+  width: 100%;
+  margin: 0 auto;
   padding: 0 10px;
   padding-top: 170px;
   border-bottom: 8px solid #696969;
@@ -107,8 +107,90 @@ h1.banner{
   padding: 20px;
 }
 
+h1.title{
+  color: #2F4F4F;
+  margin-left: 20px;
+}
+
 h2.banner{
   color: white;
   padding: 20px;
+}
+
+.nav{
+  overflow: hidden;
+  background-color: #2F4F4F;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.nav a{
+  float:left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #696969;
+  color: white;
+}
+
+.nav a.active {
+  background-color: #111;
+  color: white;
+}
+.nav .search {
+  float: right;
+}
+
+.nav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.nav .search button{
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor:pointer;
+  }
+
+  .nav .search button:hover {
+    background: #ccc;
+  }
+@media scree and (max-width: 600px) {
+  .nav a, .nav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .nav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+
+/*  }:hover:not(active) {
+  background-color: #696969;
+}
+
+ul.nav li a.active {
+  background-color: #111;
 }
 }
